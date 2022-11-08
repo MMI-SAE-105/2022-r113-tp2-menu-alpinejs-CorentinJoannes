@@ -12,6 +12,13 @@
     <header>
       <button aria-controls="mainNav">menu</button> 
       <h1>Test de menu</h1>
+      <nav id="mainNav" x-show="menuIsOpen">
+        <ul>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
+        </ul>
+      </nav>
       <script defer src="https://unpkg.com/alpinejs"></script>
       nav#mainNav>ul>li*3>a[href="#"]{item $}
     </header>
